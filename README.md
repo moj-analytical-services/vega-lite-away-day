@@ -101,7 +101,11 @@ You can then follow the examples above to produce some basic charts. As seen bel
 
 If you'd prefer to use R there is also an R package called altair (notice the lower case A). The R package altair makes use of reticulate to run python code through R and effectively provides the same functionality as the Python Altair package, even if it is a little less user friendly.
 
+Details on how to install and run altair in R can be found at the link:
 https://github.com/vegawidget/altair
+
+
+ISSUE - I CANT GET ONTO RSTUDIO AT THE MOMENT (PLATFORM ISSUES, SO WILL HAVE TO ADD ANOTHER TIME - AKA TUESDAY)
 
 
 #### Robinl - Open-data-munging
