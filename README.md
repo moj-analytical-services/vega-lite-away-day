@@ -16,15 +16,27 @@
 
 ## Aims for the day
 
-From this we can discuss whether or not Vega-lite should be our go-to default in the coding standards and way we work.
+We will be taking open datasets and learning how to use the vega-lite visualisation grammar to produce interactive charts and graphs, first in a stand alone manner before moving on to produce a stand alone HTML/Observable publication or dashboard.
 
-Examples to aim for:
+This can be broken down into the following steps:
+ 
+1. Learn how vega-lite works, produce some stand alone visualisations with example data and customise
+2. Point your visualisation at your open data
+3. Set up a publication framework using Observable/HTML and embed some visualisations and text.
+
+
+A few examples of what you can to aim for as an output:
 
 * https://s3.amazonaws.com/testdeleterobin/www/index.html
+* https://beta.observablehq.com/@robinl/draft-prototype-receipts-disposals-and-cases-outstanding-
 * https://www.ethnicity-facts-figures.service.gov.uk/crime-justice-and-the-law/policing/confidence-in-the-local-police/latest
 * https://data.justice.gov.uk/prisons
 
+At the end of today's session we can discuss whether or not Vega-lite should be our go-to default in the coding standards and whether we should change the way we work to always publish charts in vega where possible.
+
 ## Dataset options (or feel free to use your own open data ideas)
+
+JAMIE - so we want these to be something people can strive to reproduce in a better fashion.
 
 Dataset Option 1
 
@@ -32,7 +44,7 @@ https://www.gov.uk/government/statistics/safety-in-custody-quarterly-update-to-m
 
 Dataset Option 2
 
-Ta
+
 
 Dataset Option 3
 
@@ -46,13 +58,13 @@ Any other dataset, if you have an idea of an open dataset you’d like to work o
 Seeing as the aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing vega-lite visualisations we are not being prescriptive in what output you wish to produce.  We've instead provided a number of resources and guides to follow to gain familiarity with vega. 
 
 ### Testing Vega-lite
-Vega-lite has a simple interactive editor with a number of different examples.
+Vega-lite has a simple interactive editor with a number of different examples. As a first step you can try adapting the existing examples or building one of your own. Once you're happy with your chart you need to look at your dataset and what format you need it to be in to plug into vega.
 
 https://vega.github.io/editor/#/
 https://vega.github.io/vega-lite/examples/
 https://vega.github.io/vega-lite/tutorials/getting_started.html 
 
-If you are lucky enough to be using an API or an open data source in JSON format then you’ll be able input this data directly into your vega-lite visualisations. If not you'll need to process the published csv files into 
+If you are lucky enough to be using an API or an open data source in JSON format then you’ll be able input this data directly into your vega-lite visualisations as shown in the examples. However this is quite rare and if not you'll need to process the published csv files into something resembling a JSON format. Luckily there are a number of different ways you can do this depending on what language you're most comfortable with.
 
 ### Altair & Processing open data
 
@@ -76,10 +88,17 @@ https://github.com/RobinL/open_data_munge
 ### Authoring reproducable documents with Vega
 
 #### Observable Notebooks
+
+JAMIE TO ADD DETAILS
+
 Observable ????? - need specific JSON files https://beta.observablehq.com/@robinl/draft-prototype-receipts-disposals-and-cases-outstanding- 
 
 
 #### Authoring HTML with Jinja
 
+JAMIE TO ADD DETAILS
 
 #### R-Shiny with Vega
+
+
+
