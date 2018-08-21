@@ -43,8 +43,7 @@ Any other dataset, if you have an idea of an open dataset you’d like to work o
 
 ## Guidance
 
-Seeing as the aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing vega-lite visualisations we are not being prescriptive in what output you wish to produce.  We've instead provided a number of resources and guides to follow to gain familiarity with  
-
+Seeing as the aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing vega-lite visualisations we are not being prescriptive in what output you wish to produce.  We've instead provided a number of resources and guides to follow to gain familiarity with vega. 
 
 ### Testing Vega-lite
 Vega-lite has a simple interactive editor with a number of different examples.
@@ -59,38 +58,28 @@ If you are lucky enough to be using an API or an open data source in JSON format
 
 If you are lucky enough to be using an API or an open data source in JSON format then you’ll be able input this data directly into your vega-lite visualisations. However 
 
-Python
+#### Python
+https://altair-viz.github.io/getting_started/starting.html
+
+Altair is a python module which abstracts vega-lite code 
+
+#### R
 
 
-R
-
-
-Robinl - Open-data-munging
+#### Robinl - Open-data-munging
 
 JAMIE TO ADD DETAILS
 
 https://github.com/RobinL/open_data_munge 
 
 
-Method 1 - Observable
+### Authoring reproducable documents with Vega
 
-
-Data from csv to json (robins https://github.com/RobinL/open_data_munge) 
+#### Observable Notebooks
 Observable ????? - need specific JSON files https://beta.observablehq.com/@robinl/draft-prototype-receipts-disposals-and-cases-outstanding- 
 
 
-Method 2 - Python - Jinja
+#### Authoring HTML with Jinja
 
 
-Method 3 - Python Altair (Platform)
-https://altair-viz.github.io/getting_started/starting.html
-
-Altair is a python module which abstracts vega-lite code 
-
-Steps:
-Platform terminal to run:   pip install -U altair vega_datasets
-
-
-
-Method 4 - R altair (Python)
-
+#### R-Shiny with Vega
