@@ -74,12 +74,19 @@ If you are lucky enough to be using an API or an open data source in JSON format
 
 ### Altair & Processing open data
 
-If you are lucky enough to be using an API or an open data source in JSON format then you’ll be able input this data directly into your vega-lite visualisations. However 
-
 #### Python
+
+If you're comfortable using python there is a module called Altair which acts as a wrapper for vega-lite. It allows you to specify charts at a much higher level and use a pandas dataframe as your data input. An extremely helpful feature of Altair is that any charts you produce will have the option to show the source code created by Altair - this includes both the JSON format data and also the vega-lite code.
+
+This can be run locally using jupyter lab or through the analytical platform.
+
+You'll first need to open up a terminal and input: `pip install -U altair vega_datasets`
+
+This will install altair and the example vega datasets
+
 https://altair-viz.github.io/getting_started/starting.html
 
-Altair is a python module which abstracts vega-lite code 
+You can then follow the examples above to produce some basic charts. As seen below you can use these charts to produce both the vega-lite foundation for further editting and also the data format you'll need for adding the data to an observable notebook.
 
 #### R
 
