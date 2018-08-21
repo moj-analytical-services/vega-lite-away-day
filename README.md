@@ -55,13 +55,19 @@ Any other dataset, if you have an idea of an open dataset you’d like to work o
 
 ## Guidance
 
-Seeing as the aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing vega-lite visualisations we are not being prescriptive in what output you wish to produce.  We've instead provided a number of resources and guides to follow to gain familiarity with vega. 
+The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. The way we suggests you do this is as follows:
+1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code to see whats possible.
+2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinja); or by using Altair in either python or R (https://github.com/RobinL/open_data_munge can be used as an alternative) to convert the csv file into a JSON format. The latter is compatible with publishing the webpage using python+jinja or Observable, and is our recommended method.
+3. Embed the visualisation into a webpage using either python+jinja, or Observable.
+
 
 ### Testing Vega-lite
 Vega-lite has a simple interactive editor with a number of different examples. As a first step you can try adapting the existing examples or building one of your own. Once you're happy with your chart you need to look at your dataset and what format you need it to be in to plug into vega.
 
 https://vega.github.io/editor/#/
+
 https://vega.github.io/vega-lite/examples/
+
 https://vega.github.io/vega-lite/tutorials/getting_started.html 
 
 If you are lucky enough to be using an API or an open data source in JSON format then you’ll be able input this data directly into your vega-lite visualisations as shown in the examples. However this is quite rare and if not you'll need to process the published csv files into something resembling a JSON format. Luckily there are a number of different ways you can do this depending on what language you're most comfortable with.
