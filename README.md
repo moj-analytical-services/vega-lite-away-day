@@ -45,7 +45,7 @@ Any other dataset, if you have an idea of an open dataset you’d like to work o
 
 The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. The way we suggests you do this is as follows:
 1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code to see whats possible.
-2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinda); or by using Altair in either python or R (Open-data-munging https://github.com/RobinL/open_data_munge can be used as an alternative) to convert the csv file into a JSON format. The latter is compatible with publishing the webpage using python+jinja or Observable, and is our recommended method.
+2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinja); or by using Altair in either python or R (https://github.com/RobinL/open_data_munge can be used as an alternative) to convert the csv file into a JSON format. The latter is compatible with publishing the webpage using python+jinja or Observable, and is our recommended method.
 3. Embed the visualisation into a webpage using either python+jinja, or Observable.
 
 
