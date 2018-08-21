@@ -43,13 +43,17 @@ Any other dataset, if you have an idea of an open dataset you’d like to work o
 
 ## Guidance
 
-Seeing as the aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing vega-lite visualisations we are not being prescriptive in what output you wish to produce.  We've instead provided a number of resources and guides to follow to gain familiarity with vega. 
+The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing vega-lite visualisations. The way we suggests you do this is as follows:
+1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some small changes to see whats possible.
+2. ...
 
 ### Testing Vega-lite
-Vega-lite has a simple interactive editor with a number of different examples.
+Vega-lite has a simple interactive editor with a number of different examples to use as a base.
 
 https://vega.github.io/editor/#/
+
 https://vega.github.io/vega-lite/examples/
+
 https://vega.github.io/vega-lite/tutorials/getting_started.html 
 
 If you are lucky enough to be using an API or an open data source in JSON format then you’ll be able input this data directly into your vega-lite visualisations. If not you'll need to process the published csv files into 
