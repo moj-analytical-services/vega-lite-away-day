@@ -139,11 +139,13 @@ This is a good template to start with: https://github.com/moj-analytical-service
 
 www/chart_specs is where the Vega-lite code for the visualisation is stored. 
 
-If you are using csv data you can put it in www/data, and point to it in the vega-lite visualisation code (in www/chart_specs).
+If you are using csv data you can put it in www/data, and point to it in the www/chart_specs file).
 
-Then point to the name of the chart_specs file name in main.py 'charts' section.
+Next point to the name of the chart_specs file name in main.py 'charts' section.
 
-Run main.py, which will then generate dashboard.html.
+Run main.py, which will then generate dashboard.html. 
+
+Lastly run a python web server ```python3 -m http.server``` in /www to view the website.
 
 
 #### R-Shiny with Vega
