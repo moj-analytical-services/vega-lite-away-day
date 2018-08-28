@@ -135,10 +135,14 @@ Here is an example of embedding visualisations in Observable that Robin has prod
 
 #### Authoring HTML with Jinja
 
-This is a good template to start with: https://data.london.gov.uk/dataset/average-income-tax-payers-borough
+This is a good template to start with: https://github.com/moj-analytical-services/kpi-dashboard
 
-www/chart_specs is where the Vega-lite code for the data is stored. If you are using csv data you can put it in www/data, and point to it in the vega-lite code.
-Then point to the name of the chart_specs file in main.py 'charts' section.
+www/chart_specs is where the Vega-lite code for the visualisation is stored. 
+
+If you are using csv data you can put it in www/data, and point to it in the vega-lite visualisation code (in www/chart_specs).
+
+Then point to the name of the chart_specs file name in main.py 'charts' section.
+
 Run main.py, which will then generate dashboard.html.
 
 
