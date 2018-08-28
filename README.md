@@ -16,14 +16,19 @@
 
 ## Aims for the day
 
-We will be taking open datasets and learning how to use the vega-lite visualisation grammar to produce interactive charts and graphs, first in a stand alone manner before moving on to produce a stand alone HTML/Observable publication or dashboard.
+The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. The way we suggest you get started with this is as follows:
 
-This can be broken down into the following steps:
- 
-1. Learn how vega-lite works, produce some stand alone visualisations with example data and customise
-2. Customise your visualisations using your open data
-3. Produce a dashboard/publication framework using Observable/HTML and embed visualisations and text.
+1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code, changing the axis, the values, the type of chart ect, to see whats possible.
 
+2. Input new data into your visualisation. This can be done by:
+  * directly inputting the data in JSON format into the Vega-lite code; 
+  * pointing to a csv file in the Vega-lite code; 
+  * using Altair in either python or R; 
+  * using this tool to convert csv data to JSON: https://github.com/RobinL/open_data_munge. 
+
+3. Embed the visualisation into a webpage using either python+jinja, or Observable and create your own open data publication like the examples above.
+
+We have provided a detailed breakdown of each of these sections below.
 
 A few examples of what you can to aim for as an output:
 
@@ -34,8 +39,7 @@ A few examples of what you can to aim for as an output:
 
 
 ## Dataset options 
-
-Below we have provided some example datasets which you 
+Each of the above dashboards or publications could be reproduced from any open dataset. We've provided a few options here which you can use:
 
 #### Prisons data
 https://www.gov.uk/government/statistics/safety-in-custody-quarterly-update-to-march-2018 
@@ -49,8 +53,11 @@ https://www.gov.uk/government/collections/criminal-court-statistics
 #### Geographic Deprivation
 https://www.gov.uk/government/statistics/english-indices-of-deprivation-2015
 
-#### Geographic Crimes by Area
+#### Crimes by Area
 https://data.london.gov.uk/dataset/recorded_crime_summary 
+
+#### Income by Area
+https://data.london.gov.uk/dataset/average-income-tax-payers-borough
 
 (Shape files for the geographic regions are list below)
 
@@ -68,17 +75,7 @@ http://geoportal.statistics.gov.uk/datasets/lower-layer-super-output-area-2011-t
 
 http://geoportal.statistics.gov.uk/datasets/upper-tier-local-authorities-december-2011-boundaries/data?selectedAttribute=st_area(shape)
 
-
 ## Guidance
-
-The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. As a helpful starter you may wish to follow the instructions below to get going (details for each step are under the headings below):
-
-1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code to see whats possible until you produce a chart you're happy with.
-
-2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinja); or by using Altair in either python or R. Data munging code is available (https://github.com/RobinL/open_data_munge) to convert csv files directly into a JSON format.
-
-3. Embed the visualisation into a webpage using either python+jinja, or Observable and create your own open data publication like the examples above.
-
 
 ### Testing Vega-lite
 Vega-lite has a simple interactive editor with a number of different examples. As a first step you can try adapting the existing examples or building one of your own. Once you're happy with your chart you need to look at your dataset and what format you need it to be in to plug into vega.
@@ -118,29 +115,60 @@ If you'd prefer to use R there is also an R package called altair (notice the lo
 Details on how to install and run altair in R can be found at the link:
 https://github.com/vegawidget/altair
 
-
-ISSUE - I CANT GET ONTO RSTUDIO AT THE MOMENT (PLATFORM ISSUES, SO WILL HAVE TO ADD ANOTHER TIME - AKA TUESDAY)
-
-
-#### Robinl - Open-data-munging
-
-JAMIE TO ADD DETAILS
-
-https://github.com/RobinL/open_data_munge 
-
-
 ### Authoring reproducable documents with Vega
 
 #### Observable Notebooks
 
-JAMIE TO ADD DETAILS
+Vega-lite code, along with Javascript, can be directly entered directly into an Observable notebook. If you want to use Observable, then the data you use needs to be in JSON format and entered directly into the Observable Notebook with the rest of the vega-lite chart code.
 
-Observable ????? - need specific JSON files https://beta.observablehq.com/@robinl/draft-prototype-receipts-disposals-and-cases-outstanding- 
+A quick introduction to be Observable can be viewed here: https://beta.observablehq.com/@mbostock/five-minute-introduction
+
+You can start entering your own code here: https://beta.observablehq.com/scratchpad
+
+Try inputting this as an example:
+
+```javascript
+vega_embed = require("vega-embed@3");
+```
+
+```javascript
+viewof chart =  vega_embed(
+ {
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {"a": "A","b": 28}, {"a": "B","b": 55}, {"a": "C","b": 43},
+      {"a": "D","b": 91}, {"a": "E","b": 81}, {"a": "F","b": 53},
+      {"a": "G","b": 19}, {"a": "H","b": 87}, {"a": "I","b": 52}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "a", "type": "ordinal"},
+    "y": {"field": "b", "type": "quantitative"}
+  }
+});
+```
+
+
+Here is an example of embedding visualisations in Observable that Robin has produced: https://beta.observablehq.com/@robinl/draft-prototype-receipts-disposals-and-cases-outstanding- 
 
 
 #### Authoring HTML with Jinja
 
-JAMIE TO ADD DETAILS
+This is a good template to start with: https://github.com/moj-analytical-services/kpi-dashboard
+
+www/chart_specs is where the Vega-lite code for the visualisation is stored. 
+
+If you are using csv data you can put it in www/data, and point to it in the www/chart_specs file).
+
+Next point to the name of the chart_specs file name in main.py 'charts' section.
+
+Run main.py, which will then generate dashboard.html. 
+
+Lastly run a python web server ```python3 -m http.server``` in /www to view the website.
+
 
 #### R-Shiny with Vega
 
