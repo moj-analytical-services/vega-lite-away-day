@@ -97,7 +97,7 @@ https://github.com/vegawidget/altair
 
 #### Observable Notebooks
 
-Vega-lite code, along with Javascript, can be directly entered directly into an Observable notebook. If you want to use Observable, then the data you use needs to be in JSON format and entered directly into the Observable Notebook.
+Vega-lite code, along with Javascript, can be directly entered directly into an Observable notebook. If you want to use Observable, then the data you use needs to be in JSON format and entered directly into the Observable Notebook with the rest of the vega-lite chart code.
 
 A quick introduction to be Observable can be viewed here: https://beta.observablehq.com/@mbostock/five-minute-introduction
 
