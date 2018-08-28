@@ -90,8 +90,11 @@ You can then follow the examples above to produce some basic charts. As seen bel
 
 If you'd prefer to use R there is also an R package called altair (notice the lower case A). The R package altair makes use of reticulate to run python code through R and effectively provides the same functionality as the Python Altair package, even if it is a little less user friendly.
 
-Details on how to install and run altair in R can be found at the link:
+There is an R-script `altair-install-example.R` in this repository which should get you going with producing your first altair chart. Online documentation for altair can be found here:
+
 https://github.com/vegawidget/altair
+https://vegawidget.github.io/altair/articles/first-example.html 
+
 
 ### Authoring reproducable documents with Vega
 
@@ -148,5 +151,7 @@ Run main.py, which will then generate dashboard.html.
 
 #### R-Shiny with Vega
 
+Rather than producing an HTML output document, if you're more comfortable using Rshiny then you can use shiny and altair to produce your dashboard. There is an example of using altair with RShiny in this repository `altair-shiny-example`.
 
+The shiny interface should otherwise work as expect.
 
