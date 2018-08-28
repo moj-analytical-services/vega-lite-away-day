@@ -101,7 +101,7 @@ Vega-lite code, along with Javascript, can be directly entered directly into an 
 
 A quick introduction to be Observable can be viewed here: https://beta.observablehq.com/@mbostock/five-minute-introduction
 
-You can start enterring your own code here: https://beta.observablehq.com/scratchpad
+You can start entering your own code here: https://beta.observablehq.com/scratchpad
 
 Try inputting this as an example:
 
