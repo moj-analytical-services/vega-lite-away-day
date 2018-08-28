@@ -16,13 +16,15 @@
 
 ## Aims for the day
 
-We will be taking open datasets and learning how to use the vega-lite visualisation grammar to produce interactive charts and graphs, first in a stand alone manner before moving on to produce a stand alone HTML/Observable publication or dashboard.
+The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. The way we suggest you do this is as follows:
 
-This can be broken down into the following steps:
- 
-1. Learn how vega-lite works, produce some stand alone visualisations with example data and customise
-2. Point your visualisation at your open data
-3. Set up a publication framework using Observable/HTML and embed some visualisations and text.
+1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code to see whats possible until you produce a chart you're happy with.
+
+2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinja); or by using Altair in either python or R (https://github.com/RobinL/open_data_munge can be used as an alternative) to convert the csv file into a JSON format. The latter is compatible with publishing the webpage using python+jinja or Observable, and is our recommended method.
+
+3. Embed the visualisation into a webpage using either python+jinja, or Observable and create your own open data publication like the examples above.
+
+We have provided a detailed breakdown of each of these sections below.
 
 
 A few examples of what you can to aim for as an output:
@@ -52,19 +54,6 @@ Dataset Option 3
 Dataset Option 4
 
 Any other dataset, if you have an idea of an open dataset you’d like to work on then please do so. 
-
-## Guidance
-
-The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. The way we suggest you do this is as follows:
-
-1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code to see whats possible until you produce a chart you're happy with.
-
-2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinja); or by using Altair in either python or R (https://github.com/RobinL/open_data_munge can be used as an alternative) to convert the csv file into a JSON format. The latter is compatible with publishing the webpage using python+jinja or Observable, and is our recommended method.
-
-3. Embed the visualisation into a webpage using either python+jinja, or Observable and create your own open data publication like the examples above.
-
-We have provided a detailed breakdown of each of these sections below.
-
 
 ### Testing Vega-lite
 Vega-lite has a simple interactive editor with a number of different examples. As a first step you can try adapting the existing examples or building one of your own. Once you're happy with your chart you need to look at your dataset and what format you need it to be in to plug into vega.
