@@ -97,13 +97,40 @@ https://github.com/vegawidget/altair
 
 #### Observable Notebooks
 
-Vega-lite code, along with Javascript, can be directly entered directly into an Observable notebook. If you want to use Observable, then the data you link cant be in csv format, it needs to be in JSON format and entered directly into the Observable Notebook.
+Vega-lite code, along with Javascript, can be directly entered directly into an Observable notebook. If you want to use Observable, then the data you use needs to be in JSON format and entered directly into the Observable Notebook.
 
 A quick introduction to be Observable can be viewed here: https://beta.observablehq.com/@mbostock/five-minute-introduction
 
 You can start enterring your own code here: https://beta.observablehq.com/scratchpad
 
-Here is an example of embedding visualisations that Robin has produced: https://beta.observablehq.com/@robinl/draft-prototype-receipts-disposals-and-cases-outstanding- 
+Try inputting this as an example:
+
+```javascript
+vega_embed = require("vega-embed@3");
+```
+
+```javascript
+viewof chart =  vega_embed(
+ {
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {"a": "A","b": 28}, {"a": "B","b": 55}, {"a": "C","b": 43},
+      {"a": "D","b": 91}, {"a": "E","b": 81}, {"a": "F","b": 53},
+      {"a": "G","b": 19}, {"a": "H","b": 87}, {"a": "I","b": 52}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "a", "type": "ordinal"},
+    "y": {"field": "b", "type": "quantitative"}
+  }
+});
+```
+
+
+Here is an example of embedding visualisations in Observable that Robin has produced: https://beta.observablehq.com/@robinl/draft-prototype-receipts-disposals-and-cases-outstanding- 
 
 
 #### Authoring HTML with Jinja
