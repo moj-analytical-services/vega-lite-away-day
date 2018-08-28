@@ -21,8 +21,8 @@ We will be taking open datasets and learning how to use the vega-lite visualisat
 This can be broken down into the following steps:
  
 1. Learn how vega-lite works, produce some stand alone visualisations with example data and customise
-2. Point your visualisation at your open data
-3. Set up a publication framework using Observable/HTML and embed some visualisations and text.
+2. Customise your visualisations using your open data
+3. Produce a dashboard/publication framework using Observable/HTML and embed visualisations and text.
 
 
 A few examples of what you can to aim for as an output:
@@ -32,38 +32,52 @@ A few examples of what you can to aim for as an output:
 * https://www.ethnicity-facts-figures.service.gov.uk/crime-justice-and-the-law/policing/confidence-in-the-local-police/latest
 * https://data.justice.gov.uk/prisons
 
-At the end of today's session we can discuss whether or not Vega-lite should be our go-to default in the coding standards and whether we should change the way we work to always publish charts in vega where possible.
 
-## Dataset options (or feel free to use your own open data ideas)
+## Dataset options 
 
-JAMIE - so we want these to be something people can strive to reproduce in a better fashion.
+Below we have provided some example datasets which you 
 
-Dataset Option 1
-
+#### Prisons data
 https://www.gov.uk/government/statistics/safety-in-custody-quarterly-update-to-march-2018 
 
-Dataset Option 2
+#### Treasury spending data
 https://www.gov.uk/government/publications/hmt-spend-greater-than-25000-march-2018
 
+#### Criminal Court data
+https://www.gov.uk/government/collections/criminal-court-statistics 
 
-Dataset Option 3
+#### Geographic Deprivation
+https://www.gov.uk/government/statistics/english-indices-of-deprivation-2015
+
+#### Geographic Crimes by Area
+https://data.london.gov.uk/dataset/recorded_crime_summary 
+
+(Shape files for the geographic regions are list below)
+
+#### Any other datasets
+
+If you have something in mind then please feel free to use any open dataset in addition to or instead of the above.
 
 
-Dataset Option 4
+##### Shape files and geographic lookups (for the geographic datasets)
+http://geoportal.statistics.gov.uk/datasets/lower-layer-super-output-areas-december-2011-super-generalised-clipped-boundaries-in-england-and-wales/data
 
-Any other dataset, if you have an idea of an open dataset you’d like to work on then please do so. 
+If LSOA is too low level to produce a geographic plot then try mapping up to a higher output area, for example:
+
+http://geoportal.statistics.gov.uk/datasets/lower-layer-super-output-area-2011-to-upper-tier-local-authorities-2017-lookup-in-england-and-wales/data
+
+http://geoportal.statistics.gov.uk/datasets/upper-tier-local-authorities-december-2011-boundaries/data?selectedAttribute=st_area(shape)
+
 
 ## Guidance
 
-The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. The way we suggest you do this is as follows:
+The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. As a helpful starter you may wish to follow the instructions below to get going (details for each step are under the headings below):
 
 1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code to see whats possible until you produce a chart you're happy with.
 
-2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinja); or by using Altair in either python or R (https://github.com/RobinL/open_data_munge can be used as an alternative) to convert the csv file into a JSON format. The latter is compatible with publishing the webpage using python+jinja or Observable, and is our recommended method.
+2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinja); or by using Altair in either python or R. Data munging code is available (https://github.com/RobinL/open_data_munge) to convert csv files directly into a JSON format.
 
 3. Embed the visualisation into a webpage using either python+jinja, or Observable and create your own open data publication like the examples above.
-
-We have provided a detailed breakdown of each of these sections below.
 
 
 ### Testing Vega-lite
