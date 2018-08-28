@@ -37,23 +37,45 @@ A few examples of what you can to aim for as an output:
 * https://www.ethnicity-facts-figures.service.gov.uk/crime-justice-and-the-law/policing/confidence-in-the-local-police/latest
 * https://data.justice.gov.uk/prisons
 
-At the end of today's session we can discuss whether or not Vega-lite should be our go-to default in the coding standards and whether we should change the way we work to always publish charts in vega where possible.
 
-## Dataset options (or feel free to use your own open data ideas)
+## Dataset options 
+Each of the above dashboards or publications could be reproduced from any open dataset. We've provided a few options here which you can use:
 
-Dataset Option 1
+#### Prisons data
 https://www.gov.uk/government/statistics/safety-in-custody-quarterly-update-to-march-2018 
 
-Dataset Option 2
+#### Treasury spending data
 https://www.gov.uk/government/publications/hmt-spend-greater-than-25000-march-2018
 
-Dataset Option 3
-https://data.london.gov.uk/dataset/recorded_crime_summary
+#### Criminal Court data
+https://www.gov.uk/government/collections/criminal-court-statistics 
 
-Dataset Option 4
+#### Geographic Deprivation
+https://www.gov.uk/government/statistics/english-indices-of-deprivation-2015
+
+#### Crimes by Area
+https://data.london.gov.uk/dataset/recorded_crime_summary 
+
+#### Income by Area
 https://data.london.gov.uk/dataset/average-income-tax-payers-borough
 
-However feel free to use any dataset you like.
+(Shape files for the geographic regions are list below)
+
+#### Any other datasets
+
+If you have something in mind then please feel free to use any open dataset in addition to or instead of the above.
+
+
+##### Shape files and geographic lookups (for the geographic datasets)
+http://geoportal.statistics.gov.uk/datasets/lower-layer-super-output-areas-december-2011-super-generalised-clipped-boundaries-in-england-and-wales/data
+
+If LSOA is too low level to produce a geographic plot then try mapping up to a higher output area, for example:
+
+http://geoportal.statistics.gov.uk/datasets/lower-layer-super-output-area-2011-to-upper-tier-local-authorities-2017-lookup-in-england-and-wales/data
+
+http://geoportal.statistics.gov.uk/datasets/upper-tier-local-authorities-december-2011-boundaries/data?selectedAttribute=st_area(shape)
+
+## Guidance
 
 ### Testing Vega-lite
 Vega-lite has a simple interactive editor with a number of different examples. As a first step you can try adapting the existing examples or building one of your own. Once you're happy with your chart you need to look at your dataset and what format you need it to be in to plug into vega.
