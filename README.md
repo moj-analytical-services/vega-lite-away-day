@@ -55,10 +55,15 @@ Any other dataset, if you have an idea of an open dataset you’d like to work o
 
 ## Guidance
 
-The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. The way we suggests you do this is as follows:
-1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code to see whats possible.
+The aim of today's away day is to give you a chance to try out Vega-lite and the different ways of producing and embedding vega-lite visualisations. The way we suggest you do this is as follows:
+
+1. Copy the code behind one of the Vega-lite examples into the Vega-lite editor code. Make some changes to the vega-lite code to see whats possible until you produce a chart you're happy with.
+
 2. Take data from a csv file and use it to produce a vega-lite visualisation. This can be done by linking to the csv file directly (if you plan on generating your webpage using python and jinja); or by using Altair in either python or R (https://github.com/RobinL/open_data_munge can be used as an alternative) to convert the csv file into a JSON format. The latter is compatible with publishing the webpage using python+jinja or Observable, and is our recommended method.
-3. Embed the visualisation into a webpage using either python+jinja, or Observable.
+
+3. Embed the visualisation into a webpage using either python+jinja, or Observable and create your own open data publication like the examples above.
+
+We have provided a detailed breakdown of each of these sections below.
 
 
 ### Testing Vega-lite
@@ -74,14 +79,33 @@ If you are lucky enough to be using an API or an open data source in JSON format
 
 ### Altair & Processing open data
 
-If you are lucky enough to be using an API or an open data source in JSON format then you’ll be able input this data directly into your vega-lite visualisations. However 
-
 #### Python
+
+If you're comfortable using python there is a module called Altair which acts as a wrapper for vega-lite. It allows you to specify charts at a much higher level and use a pandas dataframe as your data input. An extremely helpful feature of Altair is that any charts you produce will have the option to show the source code created by Altair - this includes both the JSON format data and also the vega-lite code.
+
+This can be run locally using jupyter lab or through the analytical platform.
+
+You'll first need to open up a terminal and input: `pip install -U altair vega_datasets`
+
+This will install altair and the example vega datasets
+
 https://altair-viz.github.io/getting_started/starting.html
 
-Altair is a python module which abstracts vega-lite code 
+You can then follow the examples above to produce some basic charts. As seen below you can use these charts to produce both the vega-lite foundation for further editting and also the data format you'll need for adding the data to an observable notebook. As a next step try grabbing the source code and getting it to work in the vega-lite interactive visualiser.
+
+![Altair Chart](example_altair.png)
+![Source code](example_source.png)
+
 
 #### R
+
+If you'd prefer to use R there is also an R package called altair (notice the lower case A). The R package altair makes use of reticulate to run python code through R and effectively provides the same functionality as the Python Altair package, even if it is a little less user friendly.
+
+Details on how to install and run altair in R can be found at the link:
+https://github.com/vegawidget/altair
+
+
+ISSUE - I CANT GET ONTO RSTUDIO AT THE MOMENT (PLATFORM ISSUES, SO WILL HAVE TO ADD ANOTHER TIME - AKA TUESDAY)
 
 
 #### Robinl - Open-data-munging
