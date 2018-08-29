@@ -37,14 +37,42 @@ A few examples of what you can to aim for as an output:
 * https://www.ethnicity-facts-figures.service.gov.uk/crime-justice-and-the-law/policing/confidence-in-the-local-police/latest
 * https://data.justice.gov.uk/prisons
 
+4. Present back to the group
 
-## Dataset options 
-Each of the above dashboards or publications could be reproduced from any open dataset. We've provided a few options here which you can use:
+At the end of the day we will all present our visualisations back to the group, think about:
+* What are the key points you're trying to convey?
+* What are your overall findings?
+* How did you find vega-lite, did it do what you wanted?
+* How easy was it to pick up and would you recommend it?
+
+
+## Questions & dataset options 
+Each of the above dashboards or publications could be reproduced from any open dataset. In order to get started we've produced 5 open ended questions with relevant datasets. 
+
+1. UK Crime by Geography
+How has the rate and/or type of crime changed over time in the UK broken down by geography?
+
+2. Court Efficiency
+Which courts in the UK are being most effective and can it be seen why?
+
+3. Safety in Custody
+Is there a relationship between assault and self-harm in prison and how does this change between estates?
+
+4. Government spending 
+How is the government spending it's money and are there any interesting differences over time or between departments?
+
+5. UK Deprivation levels 
+How does deprivation vary across the UK and can different incidices of deprivation be shown together? 
+
+
+We've provided a few relevant datasets here which you can use to help or you can search out your own open data sources:
 
 #### Prisons data
 https://www.gov.uk/government/statistics/safety-in-custody-quarterly-update-to-march-2018 
 
-#### Treasury spending data
+#### Government spending data
+https://www.gov.uk/search/advanced?group=transparency&topic=%2Fgovernment%2Fgovernment-spending
+https://www.gov.uk/government/publications/ministry-of-justice-spend-over-25000-2017
 https://www.gov.uk/government/publications/hmt-spend-greater-than-25000-march-2018
 
 #### Criminal Court data
