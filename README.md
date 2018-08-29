@@ -69,7 +69,8 @@ How is the government spending it's money and are there any interesting differen
 
 How does deprivation vary across the UK and can different incidices of deprivation be shown together? 
 
-
+\n
+\n
 We've provided a few relevant datasets here which you can use to help or you can search out your own open data sources:
 
 #### Prisons data
