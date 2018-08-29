@@ -50,18 +50,23 @@ At the end of the day we will all present our visualisations back to the group, 
 Each of the above dashboards or publications could be reproduced from any open dataset. In order to get started we've produced 5 open ended questions with relevant datasets. 
 
 1. UK Crime by Geography
+
 How has the rate and/or type of crime changed over time in the UK broken down by geography?
 
 2. Court Efficiency
+
 Which courts in the UK are being most effective and can it be seen why?
 
 3. Safety in Custody
+
 Is there a relationship between assault and self-harm in prison and how does this change between estates?
 
 4. Government spending 
+
 How is the government spending it's money and are there any interesting differences over time or between departments?
 
 5. UK Deprivation levels 
+
 How does deprivation vary across the UK and can different incidices of deprivation be shown together? 
 
 
